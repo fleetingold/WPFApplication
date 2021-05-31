@@ -50,6 +50,8 @@ namespace WPFApplication
             //3、Visualize Inheritance Chains
 
             //4、New Features for Containers
+
+            //5、Advanced Interactions with Containers and Images
         }
     }
 }
