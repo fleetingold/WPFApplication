@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -29,14 +30,26 @@ namespace WPFApplication
         {
             MessageBox.Show("Hello .NET 6 World!");
 
-            //IntelliSense Completions for Casts, Indexers, and Operators
+            //1、IntelliSense Completions for Casts, Indexers, and Operators
             var w = "Hello .NET 6 World!";
-            //Indexers:提示框会有w.this[]
+            //a.Indexers:提示框会有w.this[]
 
             int i = 1;
-            //Casts:提示框会有i.(byte)、i.(char)、i.(sbyte)、i.(short)、i.(uint)、i.(ulong)、i.(ushort)
+            //b.Casts:提示框会有i.(byte)、i.(char)、i.(sbyte)、i.(short)、i.(uint)、i.(ulong)、i.(ushort)
 
-            //Operators ?
+            //c.Operators ?
+
+            //2、Automatically Insert Method Call Arguments
+            var list = new ArrayList();
+            var index = 0;
+            var value = new object();
+            var comparer = "not actually a comparer";
+            //为啥不work呢?
+            //list.BinarySearch
+
+            //3、Visualize Inheritance Chains
+
+            //4、New Features for Containers
         }
     }
 }
