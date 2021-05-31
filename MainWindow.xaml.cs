@@ -28,6 +28,15 @@ namespace WPFApplication
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             MessageBox.Show("Hello .NET 6 World!");
+
+            //IntelliSense Completions for Casts, Indexers, and Operators
+            var w = "Hello .NET 6 World!";
+            //Indexers:提示框会有w.this[]
+
+            int i = 1;
+            //Casts:提示框会有i.(byte)、i.(char)、i.(sbyte)、i.(short)、i.(uint)、i.(ulong)、i.(ushort)
+
+            //Operators ?
         }
     }
 }
